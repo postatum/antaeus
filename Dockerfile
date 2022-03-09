@@ -7,5 +7,9 @@ COPY . /anteus
 WORKDIR /anteus
 
 EXPOSE 7000
+
 # When the container starts: build, test and run the app.
-CMD ./gradlew build && ./gradlew test && ./gradlew run
+# CMD ./gradlew build && ./gradlew test && ./gradlew run
+
+# DEV: When the container starts: build and run the app.
+CMD ./gradlew build && ./gradlew run

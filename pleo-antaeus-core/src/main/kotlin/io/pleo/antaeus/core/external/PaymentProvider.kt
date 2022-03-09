@@ -1,5 +1,6 @@
 /*
-    This is the payment provider. It is a "mock" of an external service that you can pretend runs on another system.
+    This is the payment provider. It is a "mock" of an external service that you can pretend runs on
+    another system.
     With this API you can ask customers to pay an invoice.
 
     This mock will succeed if the customer has enough money in their balance,

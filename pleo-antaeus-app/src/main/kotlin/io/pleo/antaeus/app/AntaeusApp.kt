@@ -69,3 +69,21 @@ fun main() {
         customerService = customerService
     ).run()
 }
+/*
+* TODO:
+*  [ ] Endpoint to schedule payment of an invoice to the 1st day of next month (at /invoices)
+*       [ ] Add nextPaymentDate field to Invoice model and db
+*       [ ] Add mock data population for new fields
+*       [ ] When requested
+*           [ ] set invoice status to PENDING and date to 1st date of the next month
+*           [ ] If invoice status is already PENDING, do nothing
+*  [ ] Implement PaymentProvider logic
+*  [ ] Endpoint to charge a customer (at /customers)
+*       [ ] When requested
+*           [ ] Get app invoices due till today and status PENDING
+*           [ ] Try to charge a customer and set invoice status to PAID
+*           [ ] If customer does not have enough money move payment day further
+*  [ ] Tests
+*  [ ] Update README
+*  [ ] Rollback Dockerfile
+* */
